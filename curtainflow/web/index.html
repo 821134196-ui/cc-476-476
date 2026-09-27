@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>帘务通 · 窗帘拆洗与复装核验</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <div>
+      <h1>帘务通</h1>
+      <p>家政窗帘拆洗与房间复装核验系统</p>
+    </div>
+  </div>
+  <nav id="tabs" class="tabs"></nav>
+  <div class="top-right">
+    <button id="bell" class="bell" title="任务提醒">🔔<span id="bell-count" class="bell-count hidden"></span></button>
+    <label class="role-picker">角色
+      <select id="role-select"></select>
+    </label>
+  </div>
+</header>
+
+<div id="reminder-panel" class="reminder-panel hidden"></div>
+<main id="main"></main>
+<div id="toast" class="toast hidden"></div>
+<div id="modal" class="modal-mask hidden">
+  <div class="modal">
+    <h3 id="modal-title"></h3>
+    <div id="modal-body"></div>
+    <div class="modal-actions" id="modal-actions"></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
