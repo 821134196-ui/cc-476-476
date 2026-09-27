@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>帘净到家 · 窗帘拆洗与复装核验</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <h1>帘净到家</h1>
+  <span class="sub">窗帘拆洗 · 洗护 · 复装核验</span>
+  <div class="role-box">
+    <button id="reminder-btn">提醒 <span class="badge" id="reminder-count" style="display:none">0</span></button>
+    <label for="role">当前角色</label>
+    <select id="role">
+      <option value="staff">上门/配送员</option>
+      <option value="wash">洗护人员</option>
+      <option value="cs_lead">客服主管</option>
+    </select>
+  </div>
+</header>
+
+<nav id="nav">
+  <button data-view="orders" class="active">订单总览</button>
+  <button data-view="removal">上门拆卸</button>
+  <button data-view="windows">窗位清单</button>
+  <button data-view="wash">洗护队列</button>
+  <button data-view="repair">修补记录</button>
+  <button data-view="pack">配包配送</button>
+  <button data-view="reinstall">复装对照</button>
+  <button data-view="fees">费用复核</button>
+</nav>
+
+<main>
+  <div id="view-orders" class="view active"></div>
+  <div id="view-removal" class="view"></div>
+  <div id="view-windows" class="view"></div>
+  <div id="view-wash" class="view"></div>
+  <div id="view-repair" class="view"></div>
+  <div id="view-pack" class="view"></div>
+  <div id="view-reinstall" class="view"></div>
+  <div id="view-fees" class="view"></div>
+</main>
+
+<div id="reminder-panel"><h4>任务提醒</h4><div id="reminder-list"></div></div>
+<div id="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
